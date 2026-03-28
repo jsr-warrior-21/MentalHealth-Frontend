@@ -13,6 +13,7 @@ import {
   FaMapMarkerAlt,
   FaShieldAlt,
 } from "react-icons/fa";
+import ChatBot from "./ChatBot";
 
 const MedicalDiagnosisPage = () => {
   const location = useLocation();
@@ -1035,6 +1036,7 @@ const MedicalDiagnosisPage = () => {
           </p>
         </div>
       </div>
+      <ChatBot/>
     </div>
   );
 };

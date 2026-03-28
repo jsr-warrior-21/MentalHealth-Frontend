@@ -409,7 +409,7 @@ const ChatBot = () => {
       {/* Chat Window */}
       {isOpen && (
         <div
-          className="fixed bottom-24 right-6 z-50 w-96 h-[500px] rounded-2xl shadow-2xl flex flex-col bg-white overflow-hidden border-2"
+          className="fixed bottom-24 right-6 z-50 w-80 md:w-96 h-[500px] rounded-2xl shadow-2xl flex flex-col bg-white overflow-hidden border-2"
           style={{ borderColor: "#F8607C" }}
         >
           {/* Chat Header with API status */}

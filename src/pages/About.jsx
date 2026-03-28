@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import ChatBot from "../components/ChatBot";
 
 const About = () => {
   return (
@@ -71,6 +72,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <ChatBot />
     </div>
   );
 };

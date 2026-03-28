@@ -1,5 +1,6 @@
 import React from 'react'
 import {assets} from '../assets/assets'
+import ChatBot from '../components/ChatBot'
 
 const Contact = () => {
 
@@ -24,7 +25,7 @@ const Contact = () => {
               <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500 cursor-pointer'>Explore Jobs</button>
           </div>
       </div>
-
+    <ChatBot/>
     </div>
   )
 }
