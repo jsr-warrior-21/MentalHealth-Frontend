@@ -28,9 +28,9 @@ const Header = () => {
       </div>
 
       {/* Right side - Image - PROPERLY CONTAINED */}
-      <div className='md:w-1/2 flex items-center justify-center md:justify-end pt-6 md:pt-0'>
+      <div className='md:w-1/2 flex items-center justify-center md:justify-end pt-2 md:pt-0'>
         <img 
-          className='w-full h-92 max-w-xs md:max-w-sm lg:max-w-md min-h-auto rounded-lg'
+          className='h-auto max-w-full md:max-w-sm lg:max-w-md min-h-auto rounded-lg'
           src={header_img} 
           alt="doctor" 
         />
