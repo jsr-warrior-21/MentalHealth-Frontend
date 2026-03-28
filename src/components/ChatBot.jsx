@@ -390,10 +390,10 @@ const ChatBot = () => {
       {/* Chatbot Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 overflow-hidden bg-transparent"
+        className="fixed bottom-2 right-4 z-50 w-16 h-16 rounded-full flex items-center justify-center shadow-4xl animate-bounce transition-all duration-300 active:animate-none hover:animate-none  hover:scale-110 overflow-hidden bg-transparent"
       >
         {isOpen ? (
-          <FiX size={30} className="text-gray-700" />
+          <FiX size={30} className="text-gray-700 active:animate-none" />
         ) : (
           <img
             src={assets.chatbot_icon}

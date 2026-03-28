@@ -19,7 +19,7 @@ const Contact = () => {
               <p className='font-semibold text-lg text-gray-600'>OUR OFFICE</p>
               <p className='text-gray-500'>54709 East Valley <br /> Jammu & Kashmir 350 , India</p>
               <p className='text-gray-500'> Tel:+912646646546 <br /> Email:abc21@gmail.com</p>
-              <p className='font-semibold text-lg text-gray-600'>Careers at PRESCRIPTO</p>
+              <p className='font-semibold text-lg text-gray-600'>Careers at MediTrack</p>
               <p className='font-semibold text-lg text-gray-600'>Learn more about our teams and job openings</p>
               <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500 cursor-pointer'>Explore Jobs</button>
           </div>

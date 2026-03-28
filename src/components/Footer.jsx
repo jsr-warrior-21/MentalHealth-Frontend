@@ -1,18 +1,18 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import {Link} from 'react-router-dom'
 const Footer = () => {
   return (
     <div className="md:mx-10">
       <div
-        className="grid gap-14 my-10 mt-40 text-sm"
+        className="grid gap-x-20 my-5 mt-40 pr-20 text-sm"
         style={{ gridTemplateColumns: "3fr 1fr 1fr" }}
       >
         {/* left section */}
         <div className="flex flex-col">
-          <img className="mb-5 w-40" src={assets.logo} alt="" />
-          <p className="w-full md:w-2/3 text-gray-600 leading-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quae
-            libero repellendus natus ad voluptatem!
+          <img className="hidden md:block mb-5 w-40" src={assets.logo} alt="" />
+          <p className="hidden md:block w-full md:w-2/3 text-gray-600 pl-2">
+           "MediTrack – Doctors in your pocket, care on demand."
           </p>
         </div>
 
@@ -20,9 +20,9 @@ const Footer = () => {
         <div>
           <p className="text-xl font-medium mb-5">Company</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About us</li>
-            <li className="cursor-pointer">Contact us</li>
+            <Link to='/' className="cursor-pointer">Home</Link>
+            <Link to='/about' className="cursor-pointer">About us</Link>
+            <Link to='/contact' className="cursor-pointer">Contact us</Link>
             <li className="cursor-pointer">Privacy policy</li>
           </ul>
         </div>
@@ -32,7 +32,7 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">Get in Touch</p>
           <ul className="flex flex-col gap-2 text-gray-600">
             <li>+1-2122-4000</li>
-            <li>Meditrack@gmail.com</li>
+            <li>MediTrack@gmail.com</li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className="py-5 text-sm text-center">
-          Copyright 2026@ Meditrack - All Right Reserved
+          Copyright 2026@ MediTrack - All Right Reserved
         </p>
       </div>
     </div>
