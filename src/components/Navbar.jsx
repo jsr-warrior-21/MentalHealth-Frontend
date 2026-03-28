@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* Logo */}
       <img
         onClick={() => navigate("/")}
-        className="w-60 h-8 cursor-pointer"
+        className="w-45 h-8 cursor-pointer"
         src={logo}
         alt="Logo"
       />
