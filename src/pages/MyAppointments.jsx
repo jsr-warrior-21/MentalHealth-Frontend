@@ -24,7 +24,7 @@ const MyAppointments = () => {
         script.async = true;
         
         script.onload = () => {
-          console.log('✅ Razorpay script loaded successfully');
+          console.log('Razorpay script loaded successfully');
           setRazorpayLoaded(true);
           resolve(true);
         };
@@ -59,6 +59,34 @@ const MyAppointments = () => {
       console.error("Error fetching appointments:", error);
     }
   };
+
+    const cancelAppointment = async (appointmentId) => {
+  if (!window.confirm("Are you sure you want to cancel this appointment?")) {
+    return;
+  }
+
+  try {
+    const { data } = await axios.post(
+      `${backendUrl}/api/user/cancel-appointment`,
+      { appointmentId },
+      { 
+        headers: { 
+          token 
+        } 
+      }
+    );
+
+    if (data.success) {
+      toast.success("Appointment cancelled successfully!");
+      getUserAppointments();
+    } else {
+      toast.error(data.message || "Cancellation failed");
+    }
+  } catch (error) {
+    console.error("Cancel error:", error.response?.data || error.message);
+    toast.error(error.response?.data?.message || "Cancellation failed. Please try again.");
+  }
+};
 
   const handlePayment = async (appointmentId) => {
     // Check if Razorpay is loaded

@@ -193,6 +193,9 @@ const Appointment = () => {
     }
   };
 
+
+
+
   useEffect(() => {
     fetchDocInfo();
   }, [doctors, docId, location.state]);
