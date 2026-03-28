@@ -9,7 +9,7 @@ const Header = () => {
       {/* Left side - Content */}
       <div className='md:w-1/2 flex flex-col justify-center gap-4 py-10 md:py-0'>
         <p className='text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight'>
-          Book Appointment <br /> With Trusted Doctors
+          Book Appointment With <br /> Trusted Doctors
         </p>
         <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
           <img src={group_profiles} alt="profiles" />
